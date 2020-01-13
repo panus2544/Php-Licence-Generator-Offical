@@ -1,7 +1,7 @@
 # Php-Licence-Generator-Offical
 Generator php Licence. You can make Licence key and Serial Number key with your self
 
-# Useage
+# Usage
 
       require_once __DIR__.'/Lincence.Class.php';
     
