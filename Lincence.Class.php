@@ -1,4 +1,5 @@
 <?php
+
 class Serial {
 	
 	const ALPHA_CAP = "ABCDEFGHJKLMNPQRSTUVWXYZ";
@@ -26,7 +27,7 @@ class Serial {
 		return $serial;
 	}
 
-	public static function customFormat($format='B*I*N-P*R*E*S*S', $chars='')
+	public static function customFormat($format='J*O*H*N', $chars='')
 	{
 		$serial = '';
 		$aFormat = str_split($format,1);
