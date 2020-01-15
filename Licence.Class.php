@@ -6,7 +6,7 @@ class Serial {
 	const ALPHA_SMALL = "abcdefghjklmnpqrstuvwxyz";
 	const NUMERIC = 23456789;
 
-	public static function random($length=5,$chars='')
+	public static function random_number($length=5,$chars='')
 	{
 		$sChars = (empty($chars)) ? self::ALPHA_CAP . self::NUMERIC : $chars;
 		$aSplit = str_split($sChars,1);
@@ -16,7 +16,7 @@ class Serial {
 		return $serial;
 	}
 
-	public static function newSerial($parts=4, $length=5, $seperator='-', $chars='')
+	public static function random_Serial($parts=4, $length=5, $seperator='-', $chars='')
 	{
 		$serial = '';
 		for($i=0;$i<$parts;$i++)
@@ -27,7 +27,7 @@ class Serial {
 		return $serial;
 	}
 
-	public static function customFormat($format='J*O*H*N', $chars='')
+	public static function random_customFormat($format='J*O*H*N', $chars='')
 	{
 		$serial = '';
 		$aFormat = str_split($format,1);
